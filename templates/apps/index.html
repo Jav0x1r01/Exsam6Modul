@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head itemscope itemtype="http://schema.org/WebSite">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title itemprop="name">Preview bootstrap html snippet. single team list</title>
+    <meta name="description" itemprop="description"
+          content="Preview bootstrap html snippet. single team list. Copy and paste the html, css and js code for save time, build your app faster and responsive">
+    <meta name="keywords"
+          content="html, css, javascript, themes, templates, code snippets, ui examples, react js, react-native, plagraounds, cards, front-end, profile, invoice, back-end, web-designers, web-developers">
+    <link itemprop="sameAs" href="https://www.facebook.com/bootdey">
+    <link itemprop="sameAs" href="https://twitter.com/bootdey">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/bootdey_favicon.ico">
+    <link rel="apple-touch-icon" sizes="135x140" href="/img/bootdey_135x140.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/bootdey_76x76.png">
+    <link rel="canonical" href="https://bootdey.com/snippets/view/single-team-list" itemprop="url">
+    <meta property="twitter:account_id" content="2433978487"/>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bootdey">
+    <meta name="twitter:creator" content="@bootdey">
+    <meta name="twitter:title" content="Preview bootstrap html snippet. single team list">
+    <meta name="twitter:description"
+          content="Preview bootstrap html snippet. single team list. Copy and paste the html, css and js code for save time, build your app faster and responsive">
+    <meta name="twitter:image" content="https://bootdey.com/files/SnippetsImages/bootstrap-snippets-1071.png">
+    <meta name="twitter:url" content="https://bootdey.com/snippets/preview/single-team-list">
+    <meta property="og:title" content="Preview bootstrap html snippet. single team list">
+    <meta property="og:url" content="https://bootdey.com/snippets/preview/single-team-list">
+    <meta property="og:image" content="https://bootdey.com/files/SnippetsImages/bootstrap-snippets-1071.png">
+    <meta property="og:description"
+          content="Preview bootstrap html snippet. single team list. Copy and paste the html, css and js code for save time, build your app faster and responsive">
+    <meta name="msvalidate.01" content="23285BE3183727A550D31CAE95A790AB"/>
+    <script src="/cache-js/cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js" type="text/javascript"></script>
+</head>
+<body>
+<button ><a href="{% url 'add_product' %}">Add product</a></button>
+<div id="snippetContent">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="team-area sp">
+        <div class="container">
+            <div class="row">
+                {% for use in users %}
+                <div class="col-sm-6 col-md-4 col-lg-3 single-team">
+                    <div class="inner">
+                        <div class="team-img"><img src="{{ use.image.url }}"
+                                                   alt="Member Photo"></div>
+                        <div class="team-content"><h4>{{ use.name }}</h4><h5>{{ use.position | safe }}</h5>
+                            <div class="team-social"><a href="{{ use.facebook }}" class="fa fa-facebook"></a> <a href="{{ use.twitter }}" class="fa fa-twitter"></a><a href="{{ user.linkedin}}" class="fa fa-linkedin"></a></div>
+                            <div class="team-del"><a href="{% url 'add_product' %}">delete</a></div>
+                        </div>
+                    </div>
+                </div>
+               {% endfor %}
+            </div>
+        </div>
+    </div>
+    <style type="text/css">body {
+        margin-top: 20px;
+    }
+
+    .single-team .inner {
+        text-align: center;
+        margin-bottom: 35px;
+        border: 1px solid #e5eaf0;
+        padding: 5px 5px 0px;
+    }
+
+    .single-team .inner .team-img {
+        position: relative;
+    }
+
+    .single-team .inner .team-img img {
+        width: 100%;
+    }
+
+    .single-team .inner .team-img::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
+    .single-team .inner .team-img:hover::after {
+        opacity: 0.4;
+    }
+
+    .single-team .inner .team-content {
+        padding: 22px 0px 0px;
+    }
+
+    .single-team .inner .team-content h4 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .single-team .inner .team-content h5 {
+        font-weight: 300;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        color: #7d91aa;
+    }
+
+    .single-team .inner .team-content a {
+        display: inline-block;
+        padding: 2px;
+        margin: 0 3px;
+        font-size: 16px;
+    }
+
+    .team-social {
+        background: #f3f6fa;
+        width: 50%;
+        padding-top: 4px;
+        margin: auto;
+        border-radius: 15px 15px 0px 0px;
+        margin-top: 17px;
+    }</style>
+    <script type="text/javascript"></script>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1RTS0P1CD"></script>
+<script>window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+    dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'G-F1RTS0P1CD');</script>
+</body>
+</html>
