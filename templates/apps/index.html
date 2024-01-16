@@ -50,7 +50,7 @@
                                                    alt="Member Photo"></div>
                         <div class="team-content"><h4>{{ use.name }}</h4><h5>{{ use.position | safe }}</h5>
                             <div class="team-social"><a href="{{ use.facebook }}" class="fa fa-facebook"></a> <a href="{{ use.twitter }}" class="fa fa-twitter"></a><a href="{{ user.linkedin}}" class="fa fa-linkedin"></a></div>
-                            <div class="team-del"><a href="{% url 'add_product' %}">delete</a></div>
+                            <div class="team-del"><a href="{% url 'delete_product' use.pk %}">delete</a></div>
                         </div>
                     </div>
                 </div>
